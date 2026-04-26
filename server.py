@@ -5,6 +5,9 @@ class PrinterI(Demo.Printer):
     def addPrefix(self, s):
         return "Servidor diz: " + s
      
+    def formatText(self, s, current=None):
+        return s.upper()
+ 
     def printString(self, s, current=None):
         s = self.addPrefix(s)
         print(s)
