@@ -6,7 +6,7 @@ class PrinterI(Demo.Printer):
         return "Servidor diz: " + s
      
     def printUpperText(self, s, current=None):
-        return s.upper()
+        print (s.upper())
  
     def printString(self, s, current=None):
         s = self.formatText(s)
