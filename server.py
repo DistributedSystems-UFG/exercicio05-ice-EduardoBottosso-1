@@ -2,7 +2,13 @@ import sys, Ice
 import Demo
  
 class PrinterI(Demo.Printer):
-    def printString(self, s, current=None):
+    def addPrefix(self, s):
+        return "Servidor diz: " + s
+     def formatText(self, s):
+        return s.upper()
+     def printString(self, s, current=None):
+        s = self.formatText(s)
+        s = self.addPrefix(s)
         print(s)
 
 communicator = Ice.initialize(sys.argv) 
