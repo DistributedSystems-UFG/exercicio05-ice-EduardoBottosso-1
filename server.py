@@ -9,6 +9,7 @@ class PrinterI(Demo.Printer):
         return s.upper()
  
     def printString(self, s, current=None):
+        s = self.formatText(s)
         s = self.addPrefix(s)
         print(s)
 
