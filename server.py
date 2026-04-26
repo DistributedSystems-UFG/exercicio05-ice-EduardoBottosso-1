@@ -9,7 +9,7 @@ class PrinterI(Demo.Printer):
         print (s.upper())
  
     def printString(self, s, current=None):
-        s = self.addPrefix(s)
+        s = self.addPrefix(s.upper())
         print(s)
 
 communicator = Ice.initialize(sys.argv) 
