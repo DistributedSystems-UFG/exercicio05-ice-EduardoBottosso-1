@@ -9,4 +9,4 @@ if not printer:
     raise RuntimeError("Invalid proxy")
 
 printer.printString("Hello World!")
-printer.formatText("Hello World!")
+printer.printUpperText("Hello World!")
